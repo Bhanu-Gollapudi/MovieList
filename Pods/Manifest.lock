@@ -1,0 +1,28 @@
+PODS:
+  - AppDynamicsAgent (50.3.1771)
+  - RxSwift (5.0.0)
+  - SplunkMint (5.2.5)
+  - SwiftLint (0.35.0)
+
+DEPENDENCIES:
+  - AppDynamicsAgent
+  - RxSwift (~> 5)
+  - SplunkMint
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AppDynamicsAgent
+    - RxSwift
+    - SplunkMint
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  AppDynamicsAgent: c0b0bebe81ecf19c5309de131427f2acec5d144f
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SplunkMint: c5e2d1f09c9dc7721adccce6045430b81820c6b5
+  SwiftLint: 5553187048b900c91aa03552807681bb6b027846
+
+PODFILE CHECKSUM: 121bc4be34e088bdfd1e66cf1c44246c2f4864bf
+
+COCOAPODS: 1.7.5

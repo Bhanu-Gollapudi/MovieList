@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import SplunkMint
+import ADEUMInstrumentation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        Mint.sharedInstance().initAndStartSession(withAPIKey: "c6f3e16e")
+        ADEumInstrumentation.initWithKey("AD-AAB-AAV-GAB")
+        
+        let config = ADEumAgentConfiguration(appKey: "AD-AAB-AAV-GAB")
+        config.collectorURL = "https://col.eum-appdynamics.com"
+       // config.screenshotUrl = "https://image.eum-appdynamics.com"
+        ADEumInstrumentation.initWith(config)
         return true
     }
 

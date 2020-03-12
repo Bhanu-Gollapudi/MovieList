@@ -1,0 +1,8 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/RxSwift" "${PODS_ROOT}/AppDynamicsAgent/iOSAgent-50.3.1771" "${PODS_ROOT}/SplunkMint" "$(PODS_ROOT)/SplunkMint/"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.framework/Headers" $(SDKROOT)/usr/include/libz
+OTHER_LDFLAGS = $(inherited) -l"z" -framework "CoreLocation" -framework "CoreTelephony" -framework "RxSwift" -framework "SystemConfiguration" -framework "WebKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
